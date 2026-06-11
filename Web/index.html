@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Web/style.css">
+</head>
+<body>
+
+
+<section class="fdf-hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="fdf-hero__logo">
+                    <img src="/Web/img/logo_miltop.png" alt="logo_miltop">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="fdf-hero__title">
+                    <h2>Een kijkje naar...</h2>
+                    <h1>Grondwater</h1>
+                </div>
+                <div class="fdf-hero__info">
+                    <h2>Dag:</h2>
+                    <h3 id="day"></h3>
+                    <h2>Tijd:</h2>
+                    <h3 id="time"></h3>
+                </div>
+                <div id="grondwater" class="fdf-hero__waterstand bg-blue">
+                    <h2>Grondwaterstand:</h2>
+                    <h3 id="grondwater-value"></h3>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="fdf-hero__image">
+                    <img id="seasonTree" src="/Web/img/tree-normal-png.png" alt="Tree">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fdf-grass bg-green">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</section>
+
+<section class="fdf-ground bg-brown">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="fdf-ground__sliderblock bg-blue">
+                    <div class="fdf-ground__sliderblock__icons">
+                        <div class="fdf-ground__sliderblock__icons__item">
+                            <div class="fdf-ground__sliderblock__icons__tempicon bg-white"></div>
+                            <input
+                                    type="range"
+                                    id="tempSlider"
+                                    min="0"
+                                    max="50"
+                                    value="25"
+                                    class="fdf-slider"
+                            >
+                        </div>
+                        <div class="fdf-ground__sliderblock__icons__item">
+                            <div class="fdf-ground__sliderblock__icons__weathericon bg-white"></div>
+                            <input
+                                    type="range"
+                                    id="rainSlider"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    class="fdf-slider"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div id="water" class="fdf-ground__water bg-waterblue"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fdf-weetjes fdf-p">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="fdf-weetjes__title">
+                    <h1>Weetjes</h1>
+                </div>
+                <div class="fdf-weetjes__faqwrapper">
+                    <div class="fdf-weetjes__question">
+                        <div class="fdf-weetjes__question__title">
+                            <h3>Waar komt ongeveer een derde van het drinkwater op aarde vandaan?</h3>
+                        </div>
+                        <div class="fdf-weetjes__question__answer">
+                            <p>Uit grondwater</p>
+                        </div>
+                    </div>
+                    <div class="fdf-weetjes__question">
+                        <div class="fdf-weetjes__question__title">
+                            <h3>Waarom is grondwater belangrijk voor planten?</h3>
+                        </div>
+                        <div class="fdf-weetjes__question__answer">
+                            <p>Planten gebruiken het via hun wortels om te groeien</p>
+                        </div>
+                    </div>
+                    <div class="fdf-weetjes__question">
+                        <div class="fdf-weetjes__question__title">
+                            <h3>Wat gebeurt er met een deel van het regenwater dat op de grond valt?</h3>
+                        </div>
+                        <div class="fdf-weetjes__question__answer">
+                            <p>Het zakt de bodem in en kan grondwater worden</p>
+                        </div>
+                    </div>
+                    <div class="fdf-weetjes__question">
+                        <div class="fdf-weetjes__question__title">
+                            <h3>Welke bodemsoort laat water meestal het makkelijkst door?</h3>
+                        </div>
+                        <div class="fdf-weetjes__question__answer">
+                            <p>Zand</p>
+                        </div>
+                    </div>
+                    <div class="fdf-weetjes__question">
+                        <div class="fdf-weetjes__question__title">
+                            <h3>Waarom laat klei water minder goed door dan zand?</h3>
+                        </div>
+                        <div class="fdf-weetjes__question__answer">
+                            <p>Klei heeft veel kleinere poriën tussen de bodemdeeltjes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+
+<section class="fdf-game-area fdf-p bg-lightblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="fdf-game-area__content bg-blue">
+                   <h1>Speel onze minigame!</h1>
+                    <a class="fdf-btn fdf-btn__game" href="/Game%20test%20-%20Web/testBuild/Build2/index.html">Game</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+</body>
