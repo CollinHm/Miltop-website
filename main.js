@@ -90,16 +90,16 @@ function updateSeasonTree() {
     const tree = document.getElementById("seasonTree");
 
     if (month >= 3 && month <= 5) {
-        tree.src = "img/cherry-tree-png.png";
+        tree.src = "./img/cherry-tree-png.png";
     }
     else if (month >= 6 && month <= 8) {
-        tree.src = "img/tree-normal-png.png";
+        tree.src = "./img/tree-normal-png.png";
     }
     else if (month >= 9 && month <= 11) {
-        tree.src = "img/autumn-tree-png.png";
+        tree.src = "./img/autumn-tree-png.png";
     }
     else {
-        tree.src = "img/tree-snowy-png.png";
+        tree.src = "./img/tree-snowy-png.png";
     }
 }
 
