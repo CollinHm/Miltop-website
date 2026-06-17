@@ -80,7 +80,7 @@ img {
 }
 
 .fdf-hero {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   position: relative;
 }
@@ -122,15 +122,18 @@ img {
   text-align: center;
   justify-content: space-between;
   padding: 48px 0;
+  border: 2px solid white;
 }
 .fdf-hero__waterstand {
   position: absolute;
   left: 25%;
-  top: 60%;
+  top: 50%;
   height: 40vh;
   width: 30vw;
   border-radius: 15px;
   padding: 48px;
+  text-align: center;
+  border: 2px solid white;
 }
 .fdf-hero__waterstand h2 {
   color: white;
@@ -145,7 +148,7 @@ img {
   width: 100%;
   position: relative;
   align-items: end;
-  margin-top: 70px;
+  margin-top: 24px;
   overflow: hidden;
 }
 .fdf-hero__image img {
@@ -265,7 +268,7 @@ img {
 .fdf-weetjes {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 120vh;
   background: #0060AE none repeat scroll 0 0;
   padding-top: 8%;
 }
@@ -282,11 +285,12 @@ img {
   margin-bottom: 24px;
   position: relative;
   background-color: #0060AE;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
 }
 .fdf-weetjes__question__title {
-  border: 1px solid #f0f0f0;
   cursor: pointer;
-  padding: 10px 15px 10px 55px;
+  padding: 24px 15px 24px 55px;
   position: relative;
   transition: all 0.5s ease;
   color: white;
@@ -309,6 +313,7 @@ img {
   height: 30px;
   border: 1px solid #f8f8f8;
   text-align: center;
+  border-radius: 12px;
 }
 .fdf-weetjes__question__title h3 {
   color: white;
